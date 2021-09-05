@@ -9,3 +9,19 @@ hr {
   width: 10%;
   background-color: inherit;
 }
+
+h1:hover {
+  color: gold;
+}
+
+.middle-container {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.bottom-container {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
