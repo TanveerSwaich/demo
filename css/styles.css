@@ -11,7 +11,7 @@ footer {
 .top-container {
     margin: auto auto auto auto;
     margin-top: 20px;
-    width: 100%;
+    width: 40%;
     height: 18em;
 }
 
@@ -30,11 +30,9 @@ footer {
 }
 
 .header {
-  position: relative;
-  left: 300px;
-  bottom: 15px;
    width: 120px;
    height: 120px;
+   margin: auto auto auto auto;
    float: left;
 }
 
@@ -59,8 +57,8 @@ footer {
 
 .top-divider {
   border : 0;
-  height: 2px;
-  width: 70%;
+  height: 10px;
+  width: 120%;
   background-image: linear-gradient(to right, rgb(255, 121, 205), rgb(132, 94, 194), rgb(255, 121, 205));
 }
 
