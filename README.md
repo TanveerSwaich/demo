@@ -1,0 +1,4 @@
+# demo
+---
+permalink: /index.html
+---
