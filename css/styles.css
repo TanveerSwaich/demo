@@ -3,17 +3,28 @@ body {
   text-align: center;
 }
 
+footer {
+  text-align: left;
+}
+
 .top-container {
     margin: auto auto auto auto;
-    width: 100em;
-    height: 15em;
+    width: 100%;
+    height: 18em;
 }
 
 .skills {
   display: inline-block;
   margin: auto auto auto auto;
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 105em;
+}
+
+.foot {
+  margin: auto auto auto auto;
+  margin-top: 40px;
+  width: 50%;
+  height: 10em;
 }
 
 .header {
@@ -26,6 +37,7 @@ body {
 
 .skill-logo {
   position: relative;
+  left: 350px;
    width: 70px;
    height: 70px;
    float: left;
@@ -36,16 +48,73 @@ body {
   bottom: 30px;
 }
 
+.java {
+  position: relative;
+  left: 20px;
+}
+
 .top-divider {
-  border: 0;
-   height: 3px;
-   background-image: linear-gradient(to right, rgb(255, 121, 205), rgb(132, 94, 194), rgb(255, 121, 205))
+  border : 0;
+  height: 2px;
+  width: 70%;
+  background-image: linear-gradient(to right, rgb(255, 121, 205), rgb(132, 94, 194), rgb(255, 121, 205));
+}
+
+.skill-row {
+  text-align: left;
+  position: relative;
+  top: 20px;
+}
+
+.java-logo {
+  width: 220px;
+  height: 220px;
+  float: left;
+}
+
+.python-logo {
+  position: relative;
+  left: 25px;
+  width: 220px;
+  height: 220px;
+  float: right;
+}
+
+.html-logo {
+  position: relative;
+  right: 20px;
+  width: 220px;
+  height: 220px;
+  float: left;
+}
+
+.css-logo {
+  position: relative;
+  left: 10px;
+  width: 220px;
+  height: 220px;
+  float: right;
+}
+
+.javascript-logo {
+  position: relative;
+  right: 25px;
+  width: 220px;
+  height: 220px;
+  float: left;
+}
+
+p {
+  /* Font family was exported from fonts.google.com*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 h1 {
   font-size: 50px;
   font-family: 'Lobster', cursive;
-  word-spacing: 5px;
+  word-spacing: 10px;
   color: #4C4C6D;
 }
 
@@ -58,8 +127,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 45px;
   font-weight: bold;
   color: #79B4B7;
 }
