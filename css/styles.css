@@ -72,12 +72,20 @@ footer {
   float: left;
 }
 
+.java-logo:hover {
+  transform: scale(1.5);
+}
+
 .python-logo {
   position: relative;
   left: 25px;
   width: 220px;
   height: 220px;
   float: right;
+}
+
+.python-logo:hover {
+  transform: scale(1.5);
 }
 
 .html-logo {
@@ -88,6 +96,10 @@ footer {
   float: left;
 }
 
+.html-logo:hover {
+  transform: scale(1.5);
+}
+
 .css-logo {
   position: relative;
   left: 10px;
@@ -96,12 +108,20 @@ footer {
   float: right;
 }
 
+.css-logo:hover {
+  transform: scale(1.5);
+}
+
 .javascript-logo {
   position: relative;
   right: 25px;
   width: 220px;
   height: 220px;
   float: left;
+}
+
+.javascript-logo:hover {
+  transform: scale(1.5);
 }
 
 p {
