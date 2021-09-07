@@ -9,6 +9,7 @@ footer {
 
 .top-container {
   position: static;
+  right: 15px;
     margin: auto auto auto auto;
     margin-top: 20px;
     width: 40%;
