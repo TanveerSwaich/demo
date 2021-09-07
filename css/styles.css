@@ -41,7 +41,7 @@ footer {
 
 .skill-logo {
   position: relative;
-  left: 375px;
+  left: 350px;
   bottom: 40px;
    width: 70px;
    height: 70px;
@@ -139,15 +139,15 @@ p {
 }
 
 h1 {
-  font-size: 50px;
-  font-family: 'Lobster', cursive;
-  word-spacing: 10px;
+  font-size: 40px;
+  font-family: 'Cinzel', serif;
+  word-spacing: 5px;
   color: #4C4C6D;
 }
 
 h2 {
-  position: relative;
-  bottom: 10px;
+  position: static;
+  bottom: 5px;
   font-size: 25px;
   font-style: italic;
   text-decoration: underline;
