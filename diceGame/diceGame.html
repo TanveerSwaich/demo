@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../Resources/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/dice.css">
+    <script type="text/javascript" src="dice.js">
+
+    </script>
+
+    <title>Dice Game</title>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <!-- Stub for spacing -->
+        </div>
+        <div class="col-1 joystick">
+          <img src="resources/joystick.gif" alt="joystick-gif" height="100px" width="100px">
+        </div>
+        <div class="col-4">
+          <h1 class="headTop">Dice Game</h1>
+        </div>
+        <div class="col-1 confetti">
+          <img src="resources/confetti.gif" alt="confetti-gif">
+        </div>
+        <div class="col-3">
+          <!-- Stub for spacing -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <!-- Stub for spacing -->
+        </div>
+        <div class="col-3">
+          <h2 class="players">Player 1</h2>
+        </div>
+        <div class="col-2">
+          <!-- Stub for spacing -->
+        </div>
+        <div class="col-3">
+          <h2 class="players">Player 2</h2>
+        </div>
+        <div class="col-2">
+          <!-- Stub for spacing -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <!-- Stub for spacing -->
+        </div>
+        <div class="col-3">
+          <img class="dice" id="dicep1" src="resources/dice1.png" alt="dice-img">
+        </div>
+        <div class="col-2">
+          <div class="buttonHolder">
+            <button class="btn btn-outline-success btn-lg roll" onclick="roll()"
+            id="rollButton" type="button" name="roll">Roll</button>
+            <hr class="buttonDiv">
+            <button class="btn btn-outline-danger btn-lg exit" onclick="window.location.href='../index.html'"
+            type="button" name="back">Go Back</button>
+          </div>
+        </div>
+        <div class="col-3">
+          <img class="dice" id="dicep2" src="resources/dice1.png" alt="dice-img">
+        </div>
+        <div class="col-2">
+          <!-- Stub for spacing -->
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-3">
+            <!-- Stub for spacing -->
+          </div>
+          <div class="col-6">
+            <h1 id="winner" class="gameResult">Result</h1>
+          </div>
+          <div class="col-3">
+            <!-- Stub for spacing -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

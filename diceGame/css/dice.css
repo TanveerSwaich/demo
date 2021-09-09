@@ -1,0 +1,51 @@
+body {
+  background-image: url("../resources/backer.jpg");
+  text-align: center;
+}
+
+.headTop {
+  position: static;
+  padding-top: 50px;
+  font-size: 120px;
+  font-weight: 600;
+  color: #96BAFF;
+}
+
+.joystick {
+  position: static;
+  padding-top: 80px;
+}
+
+.confetti {
+  position: static;
+  padding-top: 60px;
+}
+
+.players {
+  position: static;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #96BAFF;
+}
+
+.dice{
+  padding-top: 50px;
+}
+
+.buttonHolder {
+  padding-top: 70px;
+}
+
+.buttonDiv {
+  height: 20px;
+  visibility: hidden;
+}
+
+.gameResult {
+  position: static;
+  padding-top: 80px;
+  font-size: 80px;
+  font-weight: 600;
+  color: #96BAFF;
+}

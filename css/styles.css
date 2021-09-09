@@ -7,6 +7,11 @@ footer {
   text-align: left;
 }
 
+.navbar {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .top-container {
   position: static;
   right: 15px;
@@ -140,7 +145,7 @@ p {
 
 h1 {
   font-size: 40px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Signika Negative', sans-serif;
   word-spacing: 5px;
   color: #4C4C6D;
 }
