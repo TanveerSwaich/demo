@@ -5,6 +5,15 @@ This is a controller for Dice diceGame
 // variables to store results of the role for both players
 var p1 = 0;
 var p2 = 0;
+var rollSound = new Audio('resources/sounds/DICE.WAV');
+
+// Make a keyboard control to play the Game
+document.addEventListener("keypress", function(event) {
+  if (event.key === "w"){
+    roll();
+  }
+});
+
 
 /*
 Function:
@@ -31,11 +40,20 @@ Return:
   None
 */
 function roll(){
+
   var p1 = randomIntFromInterval(1, 6);
   var p2 = randomIntFromInterval(1, 6);
 
+  $("#dicep1").fadeOut();
+  $("#dicep2").fadeOut();
+
   changeDice(p1, "dicep1");
   changeDice(p2, "dicep2");
+
+  $("#dicep1").fadeIn();
+  $("#dicep2").fadeIn();
+
+  rollSound.play();
 
   if (p1 > p2){
     document.getElementById("winner").innerHTML = "Winner is Player 1";
@@ -71,4 +89,4 @@ function changeDice(n, elementID){
 }
 
 // Link the function to button click by ID
-document.getElementById("rollButton").onclick = roll();
+document.getElementById("rollButton").addEventListener("click", roll());

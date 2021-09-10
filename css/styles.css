@@ -7,6 +7,10 @@ footer {
   text-align: left;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .navbar {
   padding-left: 1em;
   padding-right: 1em;
@@ -44,18 +48,26 @@ footer {
    float: left;
 }
 
+.skillWarpper {
+  display: inline-flex;
+  padding-bottom: 40px;
+}
+
 .skill-logo {
-  position: relative;
-  left: 350px;
-  bottom: 40px;
-   width: 70px;
-   height: 70px;
-   float: left;
+  position: static;
+  float: left;
+   width: 5rem;
+   height: 5rem;
 }
 
 .skill-header {
-  position: relative;
-  bottom: 30px;
+  position: static;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.skill-row {
+  margin: 60px auto 60px auto;
 }
 
 .java {
