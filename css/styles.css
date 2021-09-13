@@ -25,6 +25,11 @@ footer {
     height: 18em;
 }
 
+.navLogo {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .skills {
   position: static;
   z-index: 1;
