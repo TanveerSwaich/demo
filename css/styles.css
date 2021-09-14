@@ -1,185 +1,70 @@
+
 body, html {
-height: 100%;
-margin: 0;
-font: 400 15px/1.8 "Lato", sans-serif;
-color: #777;
-text-align: center;
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-footer {
-  text-align: left;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-.navbar {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.top-container {
-  position: static;
-  right: 15px;
-    margin: auto auto auto auto;
-    margin-top: 20px;
-    width: 40%;
-    height: 18em;
-}
-
-.navLogo {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.skills {
-  position: static;
-  z-index: 1;
-  display: inline-block;
-  margin: auto auto auto auto;
-  width: 50%;
-  height: 85em;
-}
-
-.foot {
-  margin: auto auto auto auto;
-  margin-top: 40px;
-  width: 50%;
-  height: 10em;
-}
-
-.header {
-   width: 120px;
-   height: 120px;
-   margin: auto auto auto auto;
-   float: left;
-}
-
-.skillWarpper {
-  display: inline-flex;
-  padding-bottom: 40px;
-}
-
-.skill-logo {
-  position: static;
-  float: left;
-   width: 5rem;
-   height: 5rem;
-}
-
-.skill-header {
-  position: static;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.skill-row {
-  margin: 60px auto 60px auto;
-}
-
-.java {
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  left: 20px;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimg-1 {
+  background-image: url("../Resources/background/back1.jpg");
+  min-height: 100%;
+  background-size: cover;
 }
 
-.top-divider {
-  border : 0;
-  height: 10px;
-  width: 120%;
-  background-image: linear-gradient(to right, rgb(255, 121, 205), rgb(132, 94, 194), rgb(255, 121, 205));
+.bgimg-2 {
+  background-image: url("../Resources/background/back2.jpg");
+  min-height: 50%;
 }
 
-.skill-row {
-  text-align: left;
-  position: relative;
-  top: 20px;
+.bgimg-3 {
+  background-image: url("../Resources/background/back3.jpg");
+  min-height: 50%;
 }
 
-.java-logo {
-  position: relative;
-  right: 60px;
-  width: 220px;
-  height: 220px;
-  float: left;
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
 }
 
-.java-logo:hover {
-  transform: scale(1.5);
-}
-
-.python-logo {
-  position: relative;
-  left: 25px;
-  width: 220px;
-  height: 220px;
-  float: right;
-}
-
-.python-logo:hover {
-  transform: scale(1.5);
-}
-
-.html-logo {
-  position: relative;
-  right: 20px;
-  width: 220px;
-  height: 220px;
-  float: left;
-}
-
-.html-logo:hover {
-  transform: scale(1.2);
-}
-
-.css-logo {
-  position: relative;
-  left: 10px;
-  width: 220px;
-  height: 220px;
-  float: right;
-}
-
-.css-logo:hover {
-  transform: scale(1.3);
-}
-
-.javascript-logo {
-  position: relative;
-  right: 25px;
-  width: 220px;
-  height: 220px;
-  float: left;
-}
-
-.javascript-logo:hover {
-  transform: scale(1.3);
-}
-
-p {
-  /* Font family was exported from fonts.google.com*/
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  line-height: 30px;
-}
-
-h1 {
-  font-size: 40px;
-  font-family: 'Signika Negative', sans-serif;
-  word-spacing: 5px;
-  color: #4C4C6D;
-}
-
-h2 {
-  position: static;
-  bottom: 5px;
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
   font-size: 25px;
-  font-style: italic;
-  text-decoration: underline;
+  letter-spacing: 10px;
+}
+
+.welcome1 {
+  padding-bottom: 2rem;
 }
 
 h3 {
-  font-size: 45px;
-  font-weight: bold;
-  color: #79B4B7;
+letter-spacing: 5px;
+text-transform: uppercase;
+font: 20px "Lato", sans-serif;
+color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: scroll;
+}
+}
+
+footer{
+  text-align: center;
+  background-color: black;
 }
