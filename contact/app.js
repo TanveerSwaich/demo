@@ -18,12 +18,9 @@ app.post("/", function(request, response) {
   var email = request.body.email;
 
   console.log(firstName, lastName, email);
+  response.sendFile(__dirname + "/contact.html");
 });
 
 app.listen("3000", function() {
   console.log("Local server was started");
 });
-
-
-// API key
-// e9ae8aa9fb3d4386a7849c966a0c5f72-us5

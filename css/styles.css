@@ -1,6 +1,9 @@
-body {
-  background-image: linear-gradient(to bottom, rgb(237, 255, 236), rgb(246, 223, 235), rgb(228, 186, 212));
-  text-align: center;
+body, html {
+height: 100%;
+margin: 0;
+font: 400 15px/1.8 "Lato", sans-serif;
+color: #777;
+text-align: center;
 }
 
 footer {
