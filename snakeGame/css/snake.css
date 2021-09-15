@@ -1,0 +1,36 @@
+body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-image: url("../resources/back.jpg");
+}
+
+h1 {
+  color: #C1FFD7;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+}
+
+canvas {
+  box-shadow: black 10px 20px 50px;
+}
+
+.controls {
+  padding-top: 5rem;
+  display: inline;
+}
+
+.ctrl {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.spacer {
+  visibility: hidden;
+}
