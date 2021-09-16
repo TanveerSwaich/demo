@@ -15,6 +15,10 @@ class snakeBody{
   }
 }
 
+// Audio components for the game
+const crunch = new Audio("resources/Bite.mp3");
+const gameEnd = new Audio("resources/gameOver.wav");
+const soundTrack = new Audio("resources/backMusic.mp3");
 
 // For game difficulty
 let speed = 5;
@@ -44,7 +48,13 @@ function drawGame(){
   updateSnake();
   let result = gameOver();
   if (result) {
-    return;
+    if (document.getElementById("volumeCheck").checked){
+      return;
+    }else {
+      soundTrack.pause();
+      gameEnd.play();
+      return;
+    }
   }
 
   clearScreen();
@@ -55,6 +65,12 @@ function drawGame(){
   drawApple();
 
   drawScore();
+
+  if (document.getElementById("volumeCheck").checked){
+    soundTrack.pause();
+  }else {
+    soundTrack.play();
+  }
 
   setTimeout(drawGame, 1000/ speed);
   console.log("Game working");
@@ -151,6 +167,9 @@ function updateSnake() {
 // To eat the apple when collision happens
 function collectApple() {
   if(appleX == headX && appleY == headY){
+    if(!document.getElementById("volumeCheck").checked){
+      crunch.play();
+    }
     // Respawn apple at a random place on the board
     appleX = Math.floor(Math.random() * tileCount);
     appleY = Math.floor(Math.random() * tileCount);
@@ -204,6 +223,16 @@ function keyDown(e) {
   }
 }
 
+function startGame(){
+  if (document.getElementById("volumeCheck").checked){
+    drawGame();
+  }else {
+    soundTrack.play();
+    soundTrack.loop = true;
+    drawGame();
+  }
+}
+
 // To reset the game again
 function resetGame() {
   clearScreen();
@@ -214,4 +243,4 @@ function resetGame() {
 resetGame();
 
 // Link the functions to the buttons on the webpage
-document.getElementById("start").onclick = drawGame;
+document.getElementById("start").onclick = startGame;
