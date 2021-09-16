@@ -221,6 +221,10 @@ function keyDown(e) {
     yVelocity = 0;
     xVelocity = 1;
   }
+
+  if (e.keyCode == 77) {
+    document.getElementById("volumeCheck").click();
+  }
 }
 
 function startGame(){
