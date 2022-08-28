@@ -1,0 +1,60 @@
+body {
+  align-content: center;
+  text-align: center;
+}
+
+.btnWrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  transition: transform 0.5s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px blue;
+}
+
+.sliderWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.square {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  height: 25px;
+  width: 84px;
+  background-color: grey;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #082032;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.square:hover {
+  transform: rotate3d(180deg);
+}
+
+.dot {
+  position: relative;
+  right: 3px;
+  bottom: 3px;
+  height: 25px;
+  width: 25px;
+  background-color: #FF4C29;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #334756;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.5s ease-in;
+}
+
+.dot:hover {
+  transform: translateX(200%);
+}

@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: cursive;
+  background-color: #191919;
+}
+
+.navBar {
+  z-index: 1000;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  height: 6%;
+  background: transparent;
+}
+
+.navContent {
+  padding-top: 0.6%;
+  padding-right: 2%;
+
+  >a {
+    padding-left: 15px;
+    color: white;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-decoration: none;
+    transition: all .5s ease-out;
+  }
+
+  >a:hover {
+    width: 100%;
+  }
+
+}
+
+.sky {
+  position: relative;
+  bottom: 30%;
+  left: 30%;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transform: translateY(-50px) scale(1.2);
+  transition: all 1s ease-out;
+
+  &.greetFader{
+    opacity: 0.3;
+    transform: translateY(0) scale(1.3);
+  }
+}
+
+.moon {
+  position: relative;
+  cursor: url("http://www.rw-designer.com/cursor-extern.php?id=165805"), auto;
+  right: 45%;
+  z-index: 10;
+  padding: 0;
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+
+  &.greetFader{
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  border: none;
+  background: linear-gradient(to top, rgb(19,24,98), rgb(46,68,130), rgb(84,107,171) 71%);
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+.textWrapper {
+  z-index: 25;
+  position: relative;
+  right: 45%;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  margin-top: 20%;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 1s ease-out;
+
+  >p {
+    font-size: 80px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease-out;
+    text-shadow:
+      1px -1px 0 #767676,
+      -1px 2px 1px #737272,
+      -2px 4px 1px #767474,
+      -3px 6px 1px #787777,
+      -4px 8px 1px #7b7a7a,
+  }
+
+    >p:hover {
+      color: #1DB9C3;
+      transform: scale(1.2);
+      transform: translateY(-20px);
+    }
+
+   &.greetFader{
+     opacity: 1;
+     transform: translateY(0);
+   }
+}
+
+  .textWrapper2 {
+    z-index: 25;
+    position: relative;
+    right: 45%;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    margin-top: 20%;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease-out;
+
+    >p {
+      font-size: 80px;
+      color: white;
+      padding: 0;
+      margin: 0;
+      transition: all .3s ease-out;
+      text-shadow:
+        1px -1px 0 #767676,
+        -1px 2px 1px #737272,
+        -2px 4px 1px #767474,
+        -3px 6px 1px #787777,
+        -4px 8px 1px #7b7a7a,
+    }
+
+    >p:hover {
+      color: #1DB9C3;
+      transform: scale(1.2);
+      transform: translateY(-20px);
+    }
+
+     &.greetFader{
+       opacity: 1;
+       transform: translateY(0);
+     }
+  }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////// Second Part
+
+.wrapper2 {
+  overflow: hidden;
+  background-color: #5C7AEA;
+}
+
+.screenPanel {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #131862;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  transition: transform 1s ease-out;
+
+  &.dark {
+    background-color: #131869;
+  }
+}
+
+.socialLinks {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+}
+
+.fab {
+  height: 50px;
+  width: 50px;
+}
+
+.container {
+  margin-top: 10%;
+  width: 60%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+
+  >h1 {
+    color: lightBlue;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 78px;
+  }
+
+  >p {
+    color: white;
+    font-size: 28px;
+    word-spacing: 5px;
+    font-family: 'Baskervville', serif;
+  }
+
+  &.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.leftContainer {
+  display: block;
+  height: 100vh;
+  width: 20%;
+}
+
+.cloud1 {
+  position: relative;
+  top: 100px;
+  right: 300px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.cloud2 {
+  position: relative;
+  top: 200px;
+  right: 300px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.cloud3 {
+  position: relative;
+  top: 280px;
+  right: 300px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.rocket {
+  position: relative;
+  top: 470px;
+  z-index: 1;
+}
+
+.rightContainer {
+  display: block;
+  height: 100vh;
+  width: 20%;
+}
+
+.plane {
+  display: block;
+  position: relative;
+  transform: translateX(250px);
+  top: 200px;
+}
+
+.codingTable {
+  position: relative;
+  top: 620px;
+  opacity: 0;
+  right: -100px;
+}
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Third Part
+
+.wrapper3 {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+  background-color: #131869;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 1s linear;
+
+  &.wrap3Color {
+    background-color: #A9E4D7;
+  }
+}

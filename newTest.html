@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Baskervville&display=swap&family=Amatic+SC&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap added to the project  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/05278c09d2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="preload" href="Resources/cloud.png">
+    <link rel="icon" href="Resources/newMoon.png">
+
+    <link rel="stylesheet" href="css/tester.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <div class="navContent">
+        <a href="#start">Home</a>
+        <a href="#wrap2">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div id="start" class="wrapper">
+      <span id="sky" class="sky"><img src="Resources/nightSky.png" alt="starry-sky"></span>
+      <span id="moon" class="moon"><img src="Resources/moon.png" alt="moon"></span>
+      <div id="text" class="textWrapper">
+        <p>I</p><p style="visibility:hidden">s</p><p>a</p><p>m</p><p style="visibility:hidden">s</p>
+      </div>
+      <div id="text2" class="textWrapper2">
+        <p>T</p><p>a</p><p>n</p><p>v</p><p>e</p><p>e</p><p>r</p><p style="visibility:hidden">s</p>
+        <p>S</p><p>i</p><p>n</p><p>g</p><p>h</p>
+      </div>
+    </div>
+
+    <!-- ###################################################################################################################### Second Part -->
+
+    <div id="wrap2" class="wrapper2">
+      <div id="screenPanel" class="screenPanel">
+        <div class="leftContainer">
+          <span id="cloud1" class="cloud1"><img src="Resources/cloud.png" alt="cloud" height="150px" width="200px"></span>
+          <span id="cloud2" class="cloud2"><img src="Resources/cloud.png" alt="cloud" height="150px" width="200px"></span>
+          <span id="cloud3" class="cloud3"><img src="Resources/cloud.png" alt="cloud" height="150px" width="200px"></span>
+          <span id="rocket" class="rocket"><img src="Resources/rocket.png" alt="rocket" height="250px" width="200px"></span>
+        </div>
+        <div id="scroller" class="container">
+          <div class="socialLinks">
+            <a href="https://www.facebook.com/tanveer.swaich/"  height="250px" width="250px"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/t_swaich/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/tanveer-singh-1867a3174/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/TanveerSwaich"><i class="fab fa-github"></i></a>
+          </div>
+          <h1>About Me</h1>
+          <br>
+          <p>I am currently learning and growing as a fullstack developer learning both front end and back end development. My experience spans over many languages mainly being Java, JavaScript, HTML, CSS and Python. I am knowledgable in C, C++ and C# as well
+          but am not as profound in them as I am with the languages mentioned earlier. My experience comes from many personal projects and real world applications that I have worked on using the prior languages and have worked with a team before to develop a real
+          world application as well as a website where we had roles assigned to each team member and worked towards a goal with set timeline and planning.</p>
+        </div>
+        <div class="rightContainer">
+          <span id="plane" class="plane"><img src="Resources/plane.png" alt="paper-plane" height="75px" width="100px"></span>
+          <span id="codingTable" class="codingTable"><img src="Resources/codingTable.png" alt="coding-table" height="200px" width="400px"></span>
+        </div>
+      </div>
+    </div>
+    <div id="wrap3" class="wrapper3">
+
+    </div>
+
+    <!-- ######################################################################################################################################## -->
+
+    <!-- Adding all the necessary script including scroll magic -->
+    <script type="text/javascript" src="testing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.velocity.min.js" integrity="sha512-ulK7pbTIY9j6WjPyRImdSqhubR5JN+KRrpCCSalyjqImnZeloOHjVLuMVux4QHte+dtApVNFJDYO4FTCvLa8yA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js" integrity="sha512-RoCOXSeYXosX4PjvRhUz0X+pmdhOJJkbjYZzmZ9dS1Iy9E/WnkTqMy+LVkPX3BV0ZgSFB2AYQKfi6ZKdNdXJnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CSSRulePlugin.min.js" integrity="sha512-1z2hYE5HWzZW8cAJRhlwT472AGZC3HlJyWYmW3SXG/Qh0S6TFdkYEqJaPwT7eCy9tI4KvwrRVK6IGqtqErpHQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/Draggable.min.js" integrity="sha512-i3gZH5PXWe3Ab68C4n2ZG1lWLVbUGQHZVOH6VBzAikny0prv5fJKfxVSeBCw3J3lN7c9gUE9T97tlFOxwJtrqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/MotionPathPlugin.min.js" integrity="sha512-+9N+rRIF2c3Va9zFY2TT25jFk7gBS1eIDGo1Da7PY8KyWNwCkflB4AvGMTl0sugcDQaZ9TpryASvTLXJ+IG5vA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js" integrity="sha512-eI+25yMAnyrpomQoYCqvHBmY4dLfqKWPnD4j8y0E3Js+yqpF26xncL4t81M1zxC+ISYfRoCN52rN/n0q2UIBZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

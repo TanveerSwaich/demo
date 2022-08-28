@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap for the project -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../css/control/listCont.js"></script>
+
+    <link rel="stylesheet" href="listStyles.css">
+
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="buttonWrapper">
+        <button class="btn navbar-brand" onclick="foo()"><i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h1 class="h1 head">Tester</h1>
+      <div class="itemsLayout">
+        <div class="listItem">
+          <div class="contentWrapper">
+            <h1 class="h3 itemTitle"><%= title %></h1>
+            <p class="itemDescription"><%= description %></p>
+            <h3 class="itemDate"><%= date %></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
