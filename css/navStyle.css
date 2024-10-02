@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e0e0e0;
+    }
+
+    .tester{
+        position: absolute;
+        top: 300px;
+        height: 50px;
+        width: 50px;
+        border: 2px solid red;
+        border-radius: 1000%;
+    }
+
+    .tester:hover{
+        background-color: rgb(21, 180, 21);
+    }
+
+    .envelope {
+      position: absolute;
+      width: 50vw;  /* 50% of viewport width */
+      height: 30vh; /* 30% of viewport height */
+      max-width: 600px;  /* Set a maximum width */
+      max-height: 400px; /* Set a maximum height */
+      background-color: #f0f0f0;
+      border: 1px solid #b63838;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .triangleLeft{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 950px;
+        width: 14vw;
+        height: 30vh;
+        background-color: #E4B1F0;
+        border: 2px solid #38b671;
+    }
+
+    .triangleRight{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 950px;
+        width: 14vw;
+        height: 30vh;
+        background-color: #E4B1F0;
+        border: 2px solid #38b671;
+    }
+
+    .triangleLeft:hover{
+        background-color: red;
+        transform: translateY(500px);
+    }
