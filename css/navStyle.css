@@ -9,10 +9,11 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #e0e0e0;
+      /* background-color: #e0e0e0; */
+      background-image: radial-gradient(#FFC6C6, #F7B5CA, #F0A8D0);
     }
 
-    .tester{
+    #tester{
         position: absolute;
         top: 300px;
         height: 50px;
@@ -21,12 +22,14 @@
         border-radius: 1000%;
     }
 
-    .tester:hover{
+    #tester:hover{
         background-color: rgb(21, 180, 21);
     }
 
     .envelope {
+      z-index: -100;
       position: absolute;
+      justify-content: center;
       width: 50vw;  /* 50% of viewport width */
       height: 30vh; /* 30% of viewport height */
       max-width: 600px;  /* Set a maximum width */
@@ -37,7 +40,8 @@
       overflow: hidden;
     }
 
-    .triangleLeft{
+    #triangleLeft{
+        z-index: 1;
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -46,9 +50,11 @@
         height: 30vh;
         background-color: #E4B1F0;
         border: 2px solid #38b671;
+        border-radius: 10px;
     }
 
-    .triangleRight{
+    #triangleRight{
+        z-index: 1;
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -57,9 +63,50 @@
         height: 30vh;
         background-color: #E4B1F0;
         border: 2px solid #38b671;
+        border-radius: 10px;
     }
 
-    .triangleLeft:hover{
-        background-color: red;
-        transform: translateY(500px);
+    .moveLeft{
+      background-color: red;
+      animation: aLeft 1s linear forwards;
+    }
+    @keyframes aLeft{
+      0%{
+        background-color: #E4B1F0;
+      }
+      25%{
+        background-color: #F0A8D0;
+      }
+      50%{
+        background-color: #F7B5CA;
+      }
+      75%{
+        background-color: #FFC6C6;
+      }
+      100%{
+        transform: translateX(-325px);
+        background-color: #FFC6C6;
+      }
+    }
+
+    .moveRight{
+      animation: aRight 1s linear forwards;
+    }
+    @keyframes aRight{
+      0%{
+        background-color: #E4B1F0;
+      }
+      25%{
+        background-color: #F0A8D0;
+      }
+      50%{
+        background-color: #F7B5CA;
+      }
+      75%{
+        background-color: #FFC6C6;
+      }
+      100%{
+        transform: translateX(325px);
+        background-color: #FFC6C6;
+      }
     }

@@ -4,9 +4,19 @@
         <link rel="stylesheet" href="css/navStyle.css">
     </head>
     <body>
-        <button class="tester">Test</button>
-        <div class="envelope"></div>
-        <div class="triangleLeft"></div>
-        <div class="triangleRight"></div>
+        <button id="tester" onclick="slide()">Test</button>
+        <div class="envelope"><span></span></div>
+        <div id="triangleLeft"></div>
+        <div id="triangleRight"></div>
     </body>
+    <script>
+        const fLeft = document.getElementById('triangleLeft')
+        const fRight = document.getElementById('triangleRight')
+
+        function slide(){
+            fLeft.classList.add("moveLeft")
+            fRight.classList.add('moveRight')
+        }
+
+    </script>
 </html>
