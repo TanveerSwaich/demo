@@ -138,6 +138,7 @@
 
 @media screen and (max-width: 2150px) {
   body {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,6 +148,26 @@
 
   p{
     word-spacing: 3px;
+  }
+
+  .topFlowers{
+    z-index: -10;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #tpLeft{
+    position: relative;
+    height: 50em;
+    width: 50em;
+  }
+
+  #tpRight{
+    position: relative;
+    height: 50em;
+    width: 50em;
+    left: 21em;
   }
 
   #open{
