@@ -18,10 +18,11 @@
             <p id="open" class="oActive">Open</p>
             <p id="close" class="cDeactive">Close</p>
         </button>
-        <div class="topDecor">
+        <div id="decor">
             <div class="topFlowers">
                 <img id='tpLeft' src="./css/resources/nav/topLeft.png" alt="Flowers for the top left corner">
                 <img id="tpRight" src="./css/resources/nav/topRight.png" alt="Flowers for the top right corner">
+                <div id="btFlowers"><img src="./css/resources/nav/bottomFlowers.png" alt=""></div>
             </div>
         </div>
         <div class="envelope">
@@ -41,7 +42,9 @@
         </div>
         <div id="triangleLeft" class="cLeft"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
         <div id="triangleRight"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
+
         <!-- <button id="reset" onclick="refresh()">Reset</button> -->
+
     </body>
     <script>
         var shutter = false
@@ -62,19 +65,24 @@
                 fRight.classList.remove('moveRight')
                 op.classList.remove('oDeactive')
                 cs.classList.remove('cActive')
+
                 shutter = false
             }else{
                 fLeft.classList.add("moveLeft")
                 fRight.classList.add('moveRight')
                 op.classList.add('oDeactive')
                 cs.classList.add('cActive')
+
                 shutter = true
+
+                setInterval(createHeart, 500);
             }
         }
 
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
+            heart.id = 'hrt';
     
             // Randomize the position of the heart on the x-axis
             heart.style.left = Math.random() * 100 + 'vw';
