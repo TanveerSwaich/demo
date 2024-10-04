@@ -1,21 +1,56 @@
 <!DOCTYPE HTml>
 <html lang="en" dir="ltr">
     <head>
+
         <link rel="stylesheet" href="css/navStyle.css">
+
+        <!-- Adding required fonts from Google Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <button id="tester" onclick="slide()">Test</button>
-        <div class="envelope"><span></span></div>
-        <div id="triangleLeft"></div>
-        <div id="triangleRight"></div>
+        <button id="tester" onclick="slide()">Start</button>
+        <div class="envelope">
+            <h1 id="top">Happy Marriage Anniversary</h1>
+            <p id="message">
+                This page is dedicated to my Wife who means the world to me.<br>
+                If you ever feel lost and cannot get your head straight<br>
+                come read this as it will be here forever even if I am not.<br>
+                I love you more than words can describe and to me this<br>
+                lifetime is nowhere near enough to express it all.<br>
+                I can only hope to spend this life giving you all I can.<br>
+                But I can say with pride that I am proud of everything you<br>
+                do and have done even if you feel like you are not enough<br>
+                you are more than I could've ever wished for.<br> 
+            </p>
+            <h1 id="bottom">I Love You</h1>
+        </div>
+        <div id="triangleLeft"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
+        <div id="triangleRight"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
+        <button id="reset" onclick="refresh()">Reset</button>
     </body>
     <script>
+
+        var height = (window).height
+        var width = (window).width
+
+        console.log(height)
+
         const fLeft = document.getElementById('triangleLeft')
         const fRight = document.getElementById('triangleRight')
 
         function slide(){
             fLeft.classList.add("moveLeft")
             fRight.classList.add('moveRight')
+        }
+
+        function refresh(){
+            window.location.reload()
         }
 
     </script>
