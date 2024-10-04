@@ -14,7 +14,10 @@
 
     </head>
     <body>
-        <button id="tester" onclick="slide()">Start</button>
+        <button id="tester" onclick="slide()">
+            <p id="open" class="oActive">Open</p>
+            <p id="close" class="cDeactive">Close</p>
+        </button>
         <div class="envelope">
             <h1 id="top">Happy Marriage Anniversary</h1>
             <p id="message">
@@ -30,11 +33,12 @@
             </p>
             <h1 id="bottom">I Love You</h1>
         </div>
-        <div id="triangleLeft"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
+        <div id="triangleLeft" class="cLeft"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
         <div id="triangleRight"><div id="hearts"><img id="pht" src="./css/resources/nav/hearts.png" alt="Hearts floating around"></div></div>
-        <button id="reset" onclick="refresh()">Reset</button>
+        <!-- <button id="reset" onclick="refresh()">Reset</button> -->
     </body>
     <script>
+        var shutter = false
 
         var height = (window).height
         var width = (window).width
@@ -43,10 +47,23 @@
 
         const fLeft = document.getElementById('triangleLeft')
         const fRight = document.getElementById('triangleRight')
+        const op = document.getElementById('open')
+        const cs = document.getElementById('close')
 
         function slide(){
-            fLeft.classList.add("moveLeft")
-            fRight.classList.add('moveRight')
+            if (shutter == true){
+                fLeft.classList.remove("moveLeft")
+                fRight.classList.remove('moveRight')
+                op.classList.remove('oDeactive')
+                cs.classList.remove('cActive')
+                shutter = false
+            }else{
+                fLeft.classList.add("moveLeft")
+                fRight.classList.add('moveRight')
+                op.classList.add('oDeactive')
+                cs.classList.add('cActive')
+                shutter = true
+            }
         }
 
         function refresh(){
